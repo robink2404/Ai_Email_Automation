@@ -2,6 +2,6 @@ fastapi
 uvicorn[standard]
 python-dotenv
 pandas
-google-generativeai
+openpyxl
+google-genai==0.3.0
 python-multipart
-
