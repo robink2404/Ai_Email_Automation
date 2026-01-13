@@ -1,4 +1,4 @@
-import google.generativeai as genai
+from google import genai
 
 from dotenv import load_dotenv
 import os
@@ -6,7 +6,7 @@ import json
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
 
